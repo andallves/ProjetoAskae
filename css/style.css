@@ -112,16 +112,23 @@ body { background-color: rgb(238, 242, 245)}
     background-color: rgb(110, 194, 233);
     
 }
-.banner {
-    margin-top: 2px;
-    width: 100%;
+#banner {
     
-    border-top:  1px solid rgb(205, 214, 213);
+    position: relative;
+    height: 335px;
+    overflow: hidden;
 }
-.banner img {
-    width: 33.5%;
-    margin: -3px;
+#janela {
+    position: absolute;
+    height: 340px;
+    top: 0;
+    left: 0;
 }
+#janela img {
+    width: 449px;
+    float: left;
+}
+
 .conteudo-home {
     height: 700px;
     width: 980px;
