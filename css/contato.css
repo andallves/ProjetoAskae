@@ -124,9 +124,11 @@ body { background-color: rgb(238, 242, 245)}
 }
 form {
     margin: 0 auto;
-    width: 500px;
+    width: 400px;
     display: flex;
     flex-direction: column;
+    padding-bottom: 50px;
+    justify-content: center;
     height: 700px;
     
 }
@@ -135,9 +137,37 @@ form h2 {
     padding: 50px 50px;
     font-size: 2.5em;
     font-family: 'Staatliches', cursive;
+    color: rgb(39,49,75);
+}
+form label {
+    padding: 3px;
+    font-size: 1.2em;
+    font-family: 'Barlow Semi condensed', sans-serif;
+    color: rgb(39,49,75);
 }
 form input {
-    margin-bottom: 30px;
+    margin-bottom: 20px;
+    padding: 6px;
+    border-radius: 7px;
+}
+form #descrição {
+    height: 100px;
+    padding: 3px;
+    top: 2px;
+}
+form #enviar {
+    background-color: rgb(45, 51, 83);;
+    font-size: 1.2em;
+    font-family: 'Barlow Semi condensed', sans-serif;
+    font-weight: 600;
+    color: white;
+    text-shadow: 1px 1px 2px black;
+
+}
+form #enviar:hover {
+    background-color: rgb(31, 34, 49);
+    cursor: pointer;
+    text-shadow: 1px 1px 2px black;
 }
 
 
@@ -146,7 +176,6 @@ form input {
 .rodape {
     height: 330px;
     background-image:linear-gradient(-150deg, rgb(45, 51, 83), rgb(31, 34, 49)80%);
-    background-color: rgb(45, 51, 83);;
     width: 100%;
     display: flex;
     flex-direction: column;
