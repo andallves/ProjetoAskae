@@ -25,50 +25,75 @@
             </div>
             <header class="cabeçalho">
                 
-                <div class="cabeçalho-logo">
-                    <div>
-                        <img class="cabeçalho-logo-image" src="imagens/logo.png" alt="Logo ASKAE" title="Logo ASKAE">
-                    </div>
-                    <div class="texto-logo">
-                       <h1>ASKAE</h1> 
-                        <p>Associação de Karatê Equilíbrio</p> 
-                    </div>
-                    
-                    
-                </div>
                 <nav class="navbar">
-                    
-                    <ul class="cabeçalho-menu-lista">
-                        <li><a href="index.html">HOME</a></li>
-                        <li><a href="faixapreta.html">FAIXAS PRETA</a></li>
-                        <li><a href="destaque.html">DESTAQUE</a>
-                           <ul class="cabeçalho-menu-submenu">
-                                <li><a href="">INTERNACIONAIS</a></li>
-                                <li><a href="">NACIONAIS</a></li>
-                                <li><a href="">ESTADUAIS</a></li>
-                            </ul>
-                        </li>    
-                        <li><a href="projeto.html">PROJETO</a>
-                           <ul class="cabeçalho-menu-submenu">
-                                <li><a href="">PELA PAZ</a> </li>
-                                <li><a href="">KARATE NA E.F</a></li> 
-                             </ul>-->
-                        </li>    
-                        <li><a href="sobre.html">SOBRE</a></li>
-                        <li><a href="contato.html">CONTATO</a></li> 
-                    </ul>
+                    <div class="container">
+                        <div class="navbar-header">
+                            <div>
+                                <a href="index.html" class="navbar-brand"><img class="cabeçalho-logo-image" src="imagens/logo.png" alt="Logo ASKAE" title="Logo ASKAE"></a>
+                            </div>
+                            <div class="texto-logo">
+                                <a href="#" class="navbar-brand">
+                                    <h1>ASKAE</h1> 
+                                    <p>Associação de Karatê Equilíbrio</p> 
+                                </a>
+                            </div>  
+                        </div>
+
+                        <ul class="">
+                            <li class="active"><a href="index.html">HOME</a></li>
+                            <li><a href="faixapreta.html">FAIXAS PRETA</a></li>
+                            <li><a href="destaque.html">DESTAQUE</a>
+                            <ul class="nav navbar-nav">
+                                    <li><a href="">INTERNACIONAIS</a></li>
+                                    <li><a href="">NACIONAIS</a></li>
+                                    <li><a href="">ESTADUAIS</a></li>
+                                </ul>
+                            </li>    
+                            <li><a href="projeto.html">PROJETO</a>
+                            <ul class="nav navbar-nav">
+                                    <li><a href="">PELA PAZ</a> </li>
+                                    <li><a href="">KARATE NA E.F</a></li> 
+                                </ul>
+                            </li>    
+                            <li><a href="sobre.html">SOBRE</a></li>
+                            <li><a href="contato.html">CONTATO</a></li> 
+                        </ul>
+                    </div>
                 </nav>
             </header>   
-            <div class="banner" id="banner">
-                <div id="janela">
-                    <img src="imagens/Exame.jpg" alt="">
-                    <img src="imagens/Projeto Geração Felicidade - Rilary.jpg" alt="">
-                    <img src="imagens/educacaofisica.jpg" alt="">
-                    <img src="imagens/entregadefaixa.jpg" alt="">
-                    <img src="imagens/Funakoshi.jpg" alt="">
+            <div class="carousel slide" data-ride="carousel" id="galeria">
+                <div class="carousel-inner">
+                    <div class="item active">
+                        <img src="imagens/Exame.jpg" alt="">
+                    </div>
+                    <div class="item">
+                        <img src="imagens/Projeto Geração Felicidade - Rilary.jpg" alt="">
+                    </div>
+                    <div class="item">
+                        <img src="imagens/educacaofisica.jpg" alt="">
+                    </div>
+                    <div class="item">
+                        <img src="imagens/entregadefaixa.jpg" alt="">
+                    </div>
+                    <div class="item">
+                        <img src="imagens/Funakoshi.jpg" alt="">
+                    </div>
                     
-                </div>
-            </div>
+                    
+                </div> <!-- Final do carousel-inner -->
+
+
+                <a class="left carousel-control" href="#galeria"
+                role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </a>
+
+                <a class="right carousel-control" href="#galeria"
+                role="button" data-slide="next">
+                    <span class="glyphicon glyphicon-chevron-right"></span>
+                </a>
+
+            </div> <!-- Final do carousel -->
             <section class="conteudo-home">
                 <div class="conteudo-titulo">
                     <h1>Associação de Karatê Equilíbrio</h1>
@@ -135,7 +160,7 @@
 
         <!--Final do código -->
         <script src="js/jquery.js"></script> 
-        <script type="text/javascript" src="js/script.js"></script>
+        <script src="js/script.js"></script>
         <script src="js/bootstrap.min.js"></script>
         
     </body>
