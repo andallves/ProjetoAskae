@@ -20,19 +20,23 @@ body { background-color: rgb(238, 242, 245)}
     
 }
 .midia {
-    width: 25px;
+    width: 20px;
+    padding-bottom: 3px;
     
 }
 nav { 
     width: 100%; 
-    height: 110px; 
+    height: 170px; 
     background-image:linear-gradient(-70deg, rgb(110, 194, 233) 50% , rgb(43, 47, 71));
     position: relative; 
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-evenly;
+    
 }
+
+    
 .navbar-header{
     display: flex;
     flex-direction: row;
@@ -41,8 +45,8 @@ nav {
 }
 .texto-logo a{
     text-align: center;
-    border-left: 2px solid rgb(23, 36, 43);
-    padding-left: 20px;
+    border-left: 1px solid rgb(23, 36, 43);
+    padding-left: 15px;
 }
 .texto-logo a h1{
     font-size: 28pt;
@@ -67,12 +71,11 @@ nav {
 }
 
 nav ul { 
-    display: flex; 
-    flex-direction: row; 
-    gap: 25px;
+    padding-top: 10px;   
 }
 nav ul li {
     list-style: none;
+    text-decoration: none;
     
 }
 
@@ -80,9 +83,12 @@ nav ul li {
 nav ul li a {
     text-decoration: none;
     font-size: 13pt;
+    color: rgb(43, 47, 71);
     font-family: 'Barlow Semi Condensed', sans-serif;
     font-weight: 600;
-    text-shadow: 1px 1px 0.5em rgb(182, 180, 180);
+    text-shadow: 1px 1px 0.5em rgb(180, 182, 182);
+    padding: 0 30px;
+
 
 }
 nav ul li a:hover {
@@ -97,10 +103,8 @@ nav ul li ul { display: none;}
 
 
 nav ul li ul {
-    
-    flex-direction: column;
-    width: 100px;
-    height: 10px;
+    width: 50px;
+   
 }
 nav ul li ul li {
     width: 150px;
@@ -108,10 +112,10 @@ nav ul li ul li {
 
 /*Itens do submenu*/
 nav ul li ul li a{
-    width: 150px;
+    width: 100px;
     text-decoration: none;
     color: white;
-    font-size: 13pt;
+    font-size: 12pt;
     font-family: 'Barlow Semi Condensed', sans-serif;
     font-weight: 400;
     
@@ -121,7 +125,7 @@ nav ul li ul li a{
 }
 nav ul li ul li a:hover {
     color: rgb(43, 47, 71);
-    font-size: 13pt;
+    font-size: 12pt;
     font-weight:600 ;
     border-bottom: 1px solid rgb(43, 47, 71);
     background-color: rgb(110, 194, 233);
@@ -133,22 +137,17 @@ nav ul li:hover ul {
 }
 
 /*Carrossel de Imagens*/
-div.carousel {
-    
-    position: relative;
-    height: 600px;
-    overflow: hidden;
-}
-div.carousel-inner {
-    position: absolute;
-    height: 600px;
-    top: 0;
-    left: 0;
-}
-div.carousel-inner img {
+.carousel {
     width: 100%;
-    height: 600px;
-    float: left;
+    height: 480px;
+}
+.carousel-inner {
+    width: 100%;
+    height: 480px;
+}
+.carousel-item img {
+    width: 100%;
+    height: 480px;
 }
 
 /* Conteúdo Principal*/
