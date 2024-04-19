@@ -1,4 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Barlow+Semi+Condensed:wght@100&family=Righteous&family=Sarala:wght@400;700&family=Staatliches&display=swap');
+@import "bootstrap/bootstrap.min.css";
+
+
 * {
     margin: 0; padding: 0;
 }
