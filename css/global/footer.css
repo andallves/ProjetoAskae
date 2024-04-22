@@ -1,16 +1,13 @@
-.rodape {
+.footer-container {
   height: 385px;
   background-image:linear-gradient(-150deg, rgb(45, 51, 83), rgb(31, 34, 49)80%);
   background-color: rgb(45, 51, 83);;
-  width: 100%;
+  width: 100vw;
   display: flex;
   flex-direction: column;
-  margin: 0 auto;
-  position: relative;
-  
-
 }
-.rodape h2 {
+
+.footer-container h2 {
   font-size: 2.5em;
   font-family: 'Barlow Semi Condensed', sans-serif;
   padding-top: 25px;
@@ -18,30 +15,27 @@
   color: white;
   text-shadow: 0px 0px 5px rgb(0, 0, 0);
   border-bottom: 1px solid rgb(206, 205, 205);
-  
 }
 
-.rodape p {
+.footer-container p {
   font-size: 1.1em;
   font-weight: 400;
   font-family: 'Barlow Semi Condensed', sans-serif;
   color: white;
   text-shadow: 0px 0px 1px rgb(109, 109, 109);
-  
 }
 
-.rodape-grid {
-  width: 980px;
+.footer-content {
+  width: 80%;
   margin: 0 auto;
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
+  justify-content: space-between;
   height: 300px;
-  gap: 150px;
-  padding-right: 80px;
+
 }
 
-.rodape-localizacao {
+.footer-address {
   display: flex;
   flex-direction: column;
   text-align: center;
