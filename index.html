@@ -1,167 +1,137 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-    <head>
-        <title>ASKAE - Associação de Karate Equilíbrio</title>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" type="text/css" href="css/style.css">
-        <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
-    </head>
-    <body>
-        <main>
-            <div class="grid-topo row">
-                <div class="topo">
-                    <a href=""><img class="midia" src="img/facebook.png" alt=""></a>
-                    <a href=""><img class="midia" src="img/instagram.png" alt=""></a>
-                    <a href=""><img class="midia" src="img/twitter.png" alt=""></a>
-                    <a href=""><img class="midia" src="img/youtube.png" alt=""></a>
-                </div>
+  <head>
+    <title>ASKAE - Associação de Karate Equilíbrio</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="shortcut icon" href="assets/logo.png" type="image/x-icon">
+  </head>
+  <body>
+    <main>
+      <div class="social-media-bar-container">
+        <div class="social-media-bar-content">
+          <a  href=""><img class="social-media-bar-item" src="assets/social-media/facebook.png" alt=""></a>
+          <a href=""><img class="social-media-bar-item" src="assets/social-media/instagram.png" alt=""></a>
+          <a href=""><img class="social-media-bar-item" src="assets/social-media/youtube.png" alt=""></a>
+        </div>
+      </div>
+
+      <header class="header-container">
+        <div class="header-logo-container">
+          <div class="header-logo-content">
+            <div>
+              <a href="/" class="header-logo-brand">
+                <img class="header-logo-image" src="assets/logo/logo.png" alt="Logo ASKAE" title="Logo ASKAE">
+              </a>
             </div>
-            <header class="cabeçalho row">
-                
-                <nav class="navbar">
-                    <div class="container">
-                        <div class="navbar-header">
-                            <div>
-                                <a href="index.html" class="navbar-brand "><img class="cabeçalho-logo-image" src="img/logo.png" alt="Logo ASKAE" title="Logo ASKAE"></a>
-                            </div>
-                            <div class="texto-logo">
-                                <a href="#" class="navbar-brand">
-                                    <h1>ASKAE</h1> 
-                                    <p>Associação de Karatê Equilíbrio</p> 
-                                </a>
-                            </div>  
-                        </div>
+            <div class="header-logo-title">
+              <a href="/" class="navbar-brand">
+                <h1>ASKAE</h1> 
+                <p>Associação de Karatê Equilíbrio</p> 
+              </a>
+            </div>  
+          </div>
 
-                        <ul class="nav">
+          <menu class="header-menu">
+            <li class="nav-item active"><a class="nav-link" href="index.html">HOME</a></li>
+            <li class="nav-item"><a class="nav-link" href="sobre.html">SOBRE</a></li>
+            <li class="nav-item"><a class="nav-link" href="contato.html">CONTATO</a></li> 
+          </menu>
+        </div>
+      </header>
+        
+      <div class="carousel slide" data-ride="carousel" id="galeria">
+        <ol class="carousel-indicators">
+          <li data-target="#galeria" data-slide-to="0" class="active"></li>
+          <li data-target="#galeria" data-slide-to="1"></li>
+          <li data-target="#galeria" data-slide-to="2"></li>
+        </ol>
 
-                            <li class="nav-item active"><a class="nav-link" href="index.html">HOME</a></li>
-                            <li class="nav-item"><a class="nav-link" href="sobre.html">SOBRE</a></li>
-                            <li class="nav-item"><a class="nav-link" href="contato.html">CONTATO</a></li> 
-                        </ul>
-                    </div>
-                </nav>
-            </header>
-            
-            <div class="carousel slide" data-ride="carousel" id="galeria">
-                <ol class="carousel-indicators">
-                    <li data-target="#galeria" data-slide-to="0" class="active"></li>
-                    <li data-target="#galeria" data-slide-to="1"></li>
-                    <li data-target="#galeria" data-slide-to="2"></li>
-                    <li data-target="#galeria" data-slide-to="3"></li>
-                </ol>
-
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <img src="img/Projeto Geração Felicidade - Rilary.jpg" >
-                    </div>
-                    <div class="carousel-item">
-                       <img src="img/educacaofisica.jpg" > 
-                    </div>
-                    <div class="carousel-item">
-                        <img src="img/entregadefaixa.jpg" >
-                    </div>
-                    <div class="carousel-item">
-                        <img src="img/Exame.jpg" >
-                    </div>
-                    
-                </div><!-- Final carousel inner -->
-
-                <a class="carousel-control-prev" href="#galeria" role="button" data-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                </a>
-
-                <a class="carousel-control-next " href="#galeria" role="button" data-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                </a>
-
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="assets/carousel/beachtraining.jpg" >
+          </div>
+          <div class="carousel-item">
+            <img src="assets/carousel/beachyokugeri.jpg" > 
+          </div>
+          <div class="carousel-item">
+            <img src="assets/carousel/meeting.jpg" >
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#galeria" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        </a>
+        <a class="carousel-control-next " href="#galeria" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        </a>
+      </div>
+      
+      <!-- <section class="conteudo-principal">
+        <div class="grid-conteudo">
+          <div class="conteudo-titulo">
+            <h1>Associação de Karatê Equilíbrio</h1>
+          </div>
+          <div class="conteudo-list">
+            <div class="conteudo-home">
+              <div class="conteudo-texto">
+                  <p>Fundada 09/02/2007</p>
+                  <p>Vinculada a Federação Cearense de Karatê</p>
+                  <p>Bicampeã do Troféu Excelência 2011/2012</p>
+                  <p>Campeã Estadual 2012</p>
+                  <p>Modalidade Reconhecida pelo COI</p>
+              </div>
             </div>
-            
-            
+            <div class="conteudo-img">
+              <a href=""><img src="assets/Funakoshi.jpg"></a>
+            </div>
+          </div> 
+        </div>
+      </section> -->
+  
+      <!-- <footer class="footer-container">
+        <div class="footer-content">
+          <div class="footer-address">
+            <div>
+              <h2 class="rodape-titulo">Endereço</h2>
+            </div>
+            <div class="rodape-conteudo">
+              <p>Atendimento: Rua Um, 1121 Alto - Parque Santana</p><br>
+              <p>Segunda, Terça e Quinta das 19hrs às 22hrs.</p><br>
+              <p>Mondubim | Fortaleza-Ceará</p>
+            </div>
+          </div>
 
-            <section class="conteudo-principal row">
-                <div class="grid-conteudo">
-                    <div class="conteudo-titulo">
-                        <h1>Associação de Karatê Equilíbrio</h1>
-                    </div>
-                    <div class="conteudo-list">
-                        <div class="conteudo-home">
-                            <div class="conteudo-texto">
-                                <p>Fundada 09/02/2007</p>
-                                <p>Vinculada a Federação Cearense de Karatê</p>
-                                <p>Bicampeã do Troféu Excelência 2011/2012</p>
-                                <p>Campeã Estadual 2012</p>
-                                <p>Modalidade Reconhecida pelo COI</p>
-                            </div>
-                        </div>
-                        <div class="conteudo-img">
-                            <a href=""><img src="img/askaebeack.jfif">
-                            </a>
-                        </div>
-                    </div>
-                    
-                </div>
-                
+          <div class="rodape-contato">
+            <div class="rodape-titulo">
+              <h2>Contato</h2>
+            </div>
+            <div class="rodape-contato-itens">
+              <div class="rodape-contato-item">
+                <img class="foto-contato" src="img/telephone.png" alt="Telefone">
+                <address><a href="85987146721"><p>(85) 98714-6721</p></a></address>
+              </div>
+              <div class="rodape-contato-item">
+                <img class="foto-contato" src="assets/social-media/whatsapp.png" alt="whatsapp">
+                <address><a><p>(85) 997146721</p></a></address>
+              </div>
+              <div class="rodape-contato-item">
+                <img class="foto-contato" src="img/gmail.png" alt="Email">
+                <address><a href="askae@contato.com"><p>askae@contato.com</p></a></address>
+              </div>
+            </div>
+          </div>
+        </div>
 
+        <small class="direitos fixed-bottom">
+          <p class="text-buttom">&copy; Copyright 2022 - Andre Alves todos os direitos reservados.</p>
+        </small>
+      </footer> -->
+    </main>
 
-            </section>
-        
-            <footer class="rodape row">
-
-                <div class="rodape-grid">
-
-                    <div class="rodape-localizacao">
-                        <div>
-                            <h2 class="rodape-titulo">Endereço</h2>
-                        </div>
-
-                        <div class="rodape-conteudo">
-                            <p>Atendimento: Rua Um, 1121 Alto - Parque Santana</p><br>
-                            <p>Segunda, Terça e Quinta das 19hrs às 22hrs.</p><br>
-                            <p>Mondubim | Fortaleza-Ceará</p>
-                        </div>
-                    </div>
-
-
-                    <div class="rodape-contato">
-
-                        <div class="rodape-titulo">
-                            <h2>Contato</h2>
-                        </div>
-
-                        <div class="rodape-contato-itens">
-
-                            <div class="rodape-contato-item">
-                                <img class="foto-contato" src="img/telephone.png" alt="Telefone">
-                                <address><a href="85987146721"><p>(85) 98714-6721</p></a></address>
-                            </div>
-
-                            <div class="rodape-contato-item">
-                                <img class="foto-contato" src="img/whatsapp.png" alt="whatsapp">
-                                <address><a href="85987146721"><p>(85) 997146721</p></a></address>
-                            </div>
-
-                            <div class="rodape-contato-item">
-                                <img class="foto-contato" src="img/gmail.png" alt="Email">
-                                <address><a href="askae@contato.com"><p>askae@contato.com</p></a></address>
-                            </div>
-
-                        </div>
-                    </div>
-
-                </div>
-
-                <small class="direitos fixed-bottom">
-                    <p class="text-buttom">&copy; Copyright 2022 - Andre Alves todos os direitos reservados.</p>
-                </small>
-            </footer>
-        </main>
-
-        <!--Final do código -->
-        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-        
-    </body>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script> 
+  </body>
 </html>
