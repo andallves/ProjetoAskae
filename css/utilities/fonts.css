@@ -1,0 +1,12 @@
+:root {
+  --font-logo: 'Alfa Slab One', serif;
+  --font-primary: "Open Sans", sans-serif;
+  --font-secondary: 'Barlow Semi Condensed', sans-serif;
+
+  --font-size-xmall: 1.3rem;
+  --font-size-small: 1.6rem;
+  --font-size-normal: 1.8rem;
+  --font-size-medium: 2.1rem;
+  --font-size-large: 2.4rem;
+  --font-size-xlage: 2.8rem;
+}

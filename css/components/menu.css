@@ -1,0 +1,25 @@
+.header-menu { 
+  display: flex;
+  flex-direction: column;  
+  gap: 3rem
+}
+
+.header-menu li a {
+  padding: 0;
+  font-size: 2rem;
+  color: rgb(255, 255, 255);
+  font-family: 'Barlow Semi Condensed', sans-serif;
+  font-weight: 700;
+  text-shadow: .1rem .1rem .1rem rgba(0, 0, 0, 0.4);
+}
+
+.header-menu li a:hover {
+  color: rgb(1, 36, 65);
+  text-shadow: 1px 1px 0.5em rgb(155, 156, 156);
+}
+
+@media (min-width: 768px) {
+  .header-menu {
+    flex-direction: row;
+  }
+}

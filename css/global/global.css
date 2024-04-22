@@ -1,0 +1,22 @@
+* {
+    margin: 0; 
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body { 
+    background-color: rgb(238, 242, 245);
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}

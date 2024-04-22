@@ -1,0 +1,19 @@
+:root {
+  --spacing-xtiny: 0.2rem;
+  --spacing-tiny: 0.4rem;
+  --spacing-xxsmall: 0.8rem;
+  --spacing-xsmall: 1.2rem;
+  --spacing-small: 1.6rem;
+  --spacing-mediumSmall: 2.0rem;
+  --spacing-medium: 2.4rem;
+  --spacing-mediumLarge: 2.8rem;
+  --spacing-large: 3.2rem;
+  --spacing-xlarge: 3.6rem;
+  --spacing-xxlarge: 4.0rem;
+  --spacing-huge: 4.4rem;
+  --spacing-xhuge: 4.8rem;
+  --spacing-xxhuge: 5.6rem;
+  --spacing-hero: 6.4rem;
+  --spacing-xhero: 7.2rem;
+  --spacing-xxhero: 8.0rem;
+}

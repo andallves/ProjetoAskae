@@ -1,0 +1,9 @@
+:root {
+  --transition-fastest: all 100ms ease-out;
+  --transition-faster: all 200ms ease-out;
+  --transition-fast: all 300ms ease-out;
+  --transition-normal: all 500ms ease-out;
+  --transition-slow: all 600ms ease-out;
+  --transition-slower: all 800ms ease-out;
+  --transition-slowest: all 1s ease-out;
+}
