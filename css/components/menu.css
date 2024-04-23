@@ -1,53 +1,60 @@
 .header-menu { 
+  width: 25rem;
+  padding: 12rem 3.5rem;
+  position: fixed;
   display: flex;
-  flex-direction: column;  
-  gap: 3rem;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: var(--secondary-color);
+  z-index: 100;
+  height: 100vh;
+  right: -100%;
+  top: 0;
+  transition: var(--transition-slowest);
+}
+
+.menu-show {
+  opacity: 1;
+  right: 0;
 }
 
 .menu-button {
-  position: absolute;
-  background-color: var(--primary-color);
+  position: fixed;
+  background-color: transparent;
   border: none;
   width: 4rem;
   height: 4rem;
   cursor: pointer;
   outline: none;
-  z-index: 2;
-  right: 3rem;
-  top: 3rem;
+  z-index: 101;
+  right: 3.5rem;
+  top: 4rem;
+  border-radius: .5rem;
+  transition: var(--transition-slow);
 }
 
 .menu-button:hover {
-  transform: scale(1.1);
+  background-color: var(--secondary-color);
 }
 
 .menu-button img {
-  width: 3.5rem;
-  height: 3.5rem;
-  fill: white;
+  width: 3rem;
+  height: 3rem;
 }
 
 .menu-items {
-  width: 25rem;
-  padding: 10rem 3.5rem;
-  position: absolute;
   display: flex;
   align-items: flex-end;
   flex-direction: column;
-  gap: 3rem;
-  opacity: 0;
-  transition: var(--transition-slowest);
-  top: 0;
-  z-index: 1;
-  background-color: var(--secondary-color);
-  height: 93.5vh;
-  transform: translateX(100%);
+  gap: 2rem;
 }
 
-.menu-items-show {
-  opacity: 1;
-  right: 0;
-  transform: translateX(0);
+.header-menu li.active a {
+  background: -webkit-linear-gradient(260deg, rgb(110, 194, 233) 50% , rgb(43, 47, 71));
+  background-clip: border-box;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: .1rem .1rem 0.5rem rgba(0, 0, 0, 0.4s);
 }
 
 .header-menu li a {
@@ -66,14 +73,17 @@
   position: absolute;
   width: 0;
   height: .3rem;
-  background-color: var(--primary-color);
+  background-image: var(--gradient-color);
   bottom: 0;
   transition: var(--transition-fast);
   right: 0;
 }
 
 .header-menu li a:hover {
-  color: var(--primary-color);
+  background: -webkit-linear-gradient(260deg, rgb(110, 194, 233) 50% , rgb(43, 47, 71));
+  background-clip: border-box;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   text-shadow: .1rem .1rem 0.5rem rgba(0, 0, 0, 0.4s);
 }
 
@@ -81,9 +91,17 @@
   width: 100%;
 }
 
+
 @media (min-width: 768px) {
   .header-menu {
-    flex-direction: row;
+    padding: 0;
+    position: static;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    background-color: transparent;
+    transition: var(--transition-slowest);
   }
 
   .menu-button {
@@ -91,17 +109,35 @@
   }
 
   .menu-items {
-    position: relative;
-    width: 100%;
-    display: flex;
-    align-items: flex-end;
-    flex-direction: row;
-    opacity: 1;
-    gap: 3rem;
     height: 100%;
-    transform: translateX(0);
-    background-color: transparent;
-    padding: 0;
-    transition: var(--transition-fastest);
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .header-menu li.active a  {
+    background: -webkit-linear-gradient(260deg, var(--primary-color) 50% , rgb(43, 47, 71));
+    background-clip: border-box;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: .1rem .1rem 0.5rem rgba(0, 0, 0, 0.4s);
+  }
+
+  .header-menu li a:hover {
+    background: -webkit-linear-gradient(260deg, var(--primary-color) 50% , rgb(43, 47, 71));
+    background-clip: border-box;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: .1rem .1rem 0.5rem rgba(0, 0, 0, 0.4s);
+  }
+
+  .header-menu li a::before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: .3rem;
+    background-image: linear-gradient(-70deg, var(--primary-color) 50% , rgb(43, 47, 71));
+    bottom: 0;
+    transition: var(--transition-fast);
+    right: 0;
   }
 }
