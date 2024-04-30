@@ -1,10 +1,11 @@
 .header-container {
   width: 100vw;
-  height: 17rem;
+  height: 100%;
   background-image: var(--gradient-color);
   position: relative; 
   display: flex;
   justify-content: space-around;
+  padding: 7rem 0;
 }
 
 .header-logo-container { 
@@ -17,33 +18,83 @@
   
 .header-logo-content {
   display: flex;
-  flex-direction: row;
-  align-items: center
-}
-.header-logo-image { 
-  height: 100px; 
+  flex-direction: column;
+  align-items: center;
+  gap: 3rem;
 }
 
-.header-logo-title a {
-  text-align: center;
-  border-left: 1px solid rgb(81, 84, 94);
-  padding-left: 15px;
+.header-logo-brand {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-.header-logo-title a h1{
+
+.header-logo-image { 
+  width: 20rem;
+}
+
+.header-logo-divider {
+  width: .1rem;
+  height: 10rem;
+  background-color: var(--secondary-color);
+  opacity: .5;
+  display: none;
+  visibility: hidden;
+}
+
+.header-logo-title {
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header-logo-title .navbar-brand {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.header-logo-title .navbar-brand h1{
   font-size: 28pt;
   font-family: var(--font-logo);
   font-weight: 200;
   margin: 0;
   padding: 0;
-  color: rgb(238, 242, 245);
-  text-shadow: 1px 1px 0.2em rgb(71, 71, 71);
+  color: var(--text-light-color);
+  text-shadow: 0.1rem 0.1rem 0.4rem var(--secondary-color);
 }
-.header-logo-title a p {
+.header-logo-title .navbar-brand p {
+  text-align: center;
   padding: 0;
   margin: 0;
-  font-size: 12pt;
-  font-family: 'Barlow Semi Condensed', sans-serif;
+  font-size: var(--font-size-small);
+  font-family: var(--font-secondary);
   font-weight: 600;
   color: aliceblue;
-  text-shadow: 1px 1px 0.2em rgb(71, 71, 71);
+  text-shadow: .1rem .1rem .4rem var(--secondary-color);
+}
+
+@media screen and (min-width: 768px) {
+  .header-container {
+    height: 17rem;
+    padding: 0;
+  }
+
+  .header-logo-content {
+    flex-direction: row;
+    gap: 2rem;
+  }
+
+  .header-logo-image { 
+    width: 10rem;
+  }
+
+  .header-logo-divider {
+    display: flex;
+    visibility: visible;
+  }
 }
