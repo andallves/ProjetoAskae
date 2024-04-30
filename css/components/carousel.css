@@ -1,20 +1,43 @@
-/*Carrossel de Imagens*/
 .carousel {
   width: 100vw;
-  height: 500px;
-  
-  
+  height: 31rem;
 }
+
 .carousel-inner {
   width: 100%;
-  height: 500px;
+  height: 31rem;
   margin: 0 auto;
-  
 }
+
 .carousel-item img {
   width: 100%;
-  height: 100%;
   object-fit: cover;
-  object-position: 50% 100%; 
+  object-position: 20% 100%; 
+}
+
+@media screen and (min-width: 768px) {
+  .carousel {
+    width: 100vw;
+    height: 40rem;
+  }
+  
+  .carousel-inner {
+    width: 100%;
+    height: 40rem;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (min-width: 991px) {
+  .carousel {
+    width: 100vw;
+    height: 55rem;
+  }
+  
+  .carousel-inner {
+    width: 100%;
+    height: 55rem;
+    margin: 0 auto;
+  }
 }
 
