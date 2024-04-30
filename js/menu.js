@@ -1,6 +1,12 @@
 const btn = document.querySelector('#menu-button');
+const menu = document.querySelector('#menu');
+const menuButtonIcon = document.querySelectorAll('div.icon-bar');
 
 btn.addEventListener('click', (ev) => {
   ev.preventDefault();
-  const menuItens = document.querySelector('#menu').classList.toggle("menu-show");
+  menu.classList.toggle("menu-show");
+  for (const bar of menuButtonIcon) {
+    bar.classList.toggle("open");
+
+  }
 })

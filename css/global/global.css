@@ -22,3 +22,8 @@ li {
 a {
     text-decoration: none;
 }
+
+button {
+  border: none !important;
+  outline: none !important;
+}
