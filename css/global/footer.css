@@ -29,7 +29,7 @@
   position: relative;
   width: fit-content;
   color: var(--text-light-color);
-  font-size: var(--font-size-lage);
+  font-size: var(--font-size-large);
   font-family: var(--font-secondary);
   text-shadow: .1rem .1rem .2rem var(--text-dark-color);
   padding-bottom: .5rem;
@@ -91,6 +91,9 @@
 }
 
 .all-rights {
+  display: flex;
+  align-self: center;
+  justify-content: center;
   height: 4rem;
   width: 100%;
   display: flex;
