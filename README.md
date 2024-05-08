@@ -59,6 +59,6 @@ First, run the development server:
 
 <h2>Project status</h2>
 
-![maintenance-status](https://img.shields.io/badge/maintenance-actively--developed-brightgreen.svg)
+![maintenance-status](https://img.shields.io/badge/maintenance-yes-brightgreen.svg)
 
 This project is still under development, that is, if you find a bug and want to contribute, you can report the problem found and as soon as possible I will make the necessary corrections, in addition, I am also making some improvements, so in the future the projects may contain new features.
