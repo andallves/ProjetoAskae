@@ -1,6 +1,17 @@
-# ASKAE - Associação de Karatê e Equilíbrio
+<h1 align="center" >ASKAE - Associação de Karatê e Equilíbrio</h1>
 
-## Descrição
+![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)
+![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
+![Bootstrap](https://img.shields.io/badge/bootstrap-%238511FA.svg?style=for-the-badge&logo=bootstrap&logoColor=white)
+
+
+<p align="center">
+    <img src="src/assets/template/image.png" alt="Imagem do projeto" width="400px">
+</p>
+
+
+<h2 id="started">Descrição</h2>
 Essa Landing Page foi um dos meus primeiros projetos a serem desenvolvidos, a ASKAE é uma acadêmia de karatê onde passei uma boa parte da minha adolescência, então quando iniciei meus estudos no mundo do desenvolvimento
 web, esse foi o primeiro projeto que me veio em mente, construir uma página para minha equipe, desenvolvi logo no começo dos meus estudos de **HTML**, **CSS** e **JavaScript**, não entendia nem sobre **Node** ou o que era package.json, 
 muito utilizado nos meus atuais projetos frontend. Bem, essa landing page havia ficado pelo meio do caminho, sem nenhuma funcionalidade, ou mesmo responsividade...
@@ -16,15 +27,9 @@ Desenvolvido em:
 - Bootstrap
   
 
-<div style="display: inline_block; margin: 0 auto; padding: 120em 20em">
-  <img align="center" alt="And-HTML" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg" />
-  <img align="center" alt="And-CSS" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg" />    
-  <img align="center" alt="And-Js" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-plain.svg" />
-  <img align="center" alt="And-Bootstrap" height="30" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/bootstrap/bootstrap-original.svg" />
-</div>
 
 
-## Getting Started
+<h2>Getting Started</h2>
 
     npm install
 
@@ -39,8 +44,21 @@ First, run the development server:
     bun dev
 
 
-## Author
-Andre Alves Pereira
+<h2>Author</h2>
+<table>
+  <tr>
+    <td align="center">
+      <a href="#">
+        <img src="https://avatars.githubusercontent.com/u/37510133?v=4" width="100px;" alt="Andre Alves Profile Picture"/><br>
+        <sub>
+          <b>Andre Alves Pereira</b>
+        </sub>
+      </a>
+    </td>
+</table>
 
-## Project status
+<h2>Project status</h2>
+
+![maintenance-status](https://img.shields.io/badge/maintenance-yes-brightgreen.svg)
+
 This project is still under development, that is, if you find a bug and want to contribute, you can report the problem found and as soon as possible I will make the necessary corrections, in addition, I am also making some improvements, so in the future the projects may contain new features.
