@@ -25,7 +25,7 @@
   gap: 2rem;
 }
 
-.footer-title h2 {
+.footer-title {
   position: relative;
   width: fit-content;
   color: var(--text-light-color);
@@ -36,7 +36,7 @@
   margin: 0 auto;
 }
 
-.footer-title h2::after {
+.footer-title::after {
   content: "";
   position: absolute;
   bottom: 0;
