@@ -9,7 +9,7 @@
 
 .about-content {
   position: relative;
-  width: 50%;
+  width: 80%;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
@@ -18,7 +18,7 @@
 }
 
 .title {
-  font-size: 4rem;
+  font-size: 3rem;
   color: var(--text-light-color);
   font-family: var(--font-primary);
   font-weight: 700;
@@ -28,7 +28,7 @@
 }
 
 .paragraph {
-  font-size: 2rem;
+  font-size: 1.4rem;
   text-indent: 5rem;
   color: var(--text-light-color);
   font-family: var(--font-secondary);
@@ -38,8 +38,48 @@
 
 .background-image {
  position: absolute;
- width: 50rem;
- right: 0;
+ top: 10rem;
+ width: 30rem;
+ right: 5rem;
  z-index: 1;
  opacity: .4;
+}
+
+@media (min-width: 48rem) {
+  .about-content {
+    position: relative;
+    width: 50%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: .4rem;
+    padding: 5rem 0;
+  }
+
+  .title {
+    font-size: 4rem;
+    color: var(--text-light-color);
+    font-family: var(--font-primary);
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 3rem;
+    z-index: 2;
+  }
+
+  .paragraph {
+    font-size: 2rem;
+    text-indent: 5rem;
+    color: var(--text-light-color);
+    font-family: var(--font-secondary);
+    font-weight: 300;
+    z-index: 2;
+  }
+
+  .background-image {
+    position: absolute;
+    width: 40rem;
+    right: 10rem;
+    z-index: 1;
+    opacity: .4;
+   }
 }
